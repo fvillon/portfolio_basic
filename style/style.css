@@ -29,23 +29,23 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 70vw;
+  width: 100vw;
   height: 109px;
-  margin: 0px 296px;
+  padding: 0px 12em;
 }
 
 header {
-  margin: 0em 16em;
+  padding: 0em 12em;
   margin-top: 4em;
   margin-bottom: 12em;
   display: flex;
   flex-direction: row;
-  width: 70vw;
+  width: 100vw;
 }
 
 #infoFVR {
   margin-top: 96px;
-  margin-right: 96px;
+  /*margin-right: 96px;*/
 }
 
 #infoFVR h1 {
@@ -162,9 +162,10 @@ header {
   width: 100vw;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
+  /*flex-wrap: wrap;*/
+  align-items: flex-start;
   margin-bottom: 8em;
+  padding-right: 12em;
 }
 
 #skills h1 {
@@ -173,10 +174,10 @@ header {
   color: #cef6ff;
   margin-bottom: 0.5em;
 }
-
+/*
 #skills p {
   width: 800px;
-}
+}*/
 
 #designSkills {
   margin-top: 32px;
@@ -189,9 +190,18 @@ header {
   justify-content: flex-start;
 }
 
+#imgSkills {
+  width: 40vw;
+}
+
+.skillItem {
+  width: 10vw;
+}
+
 #trabajos {
-  margin: 0px 296px;
+  width: 100vw;
   margin-bottom: 96px;
+  padding: 0em 12em;
 }
 
 #trabajos h1 {
@@ -255,6 +265,7 @@ footer {
   padding: 16px 0px;
 }
 
+/* Extra large devices */
 @media screen and (max-width: 1200px) {
   body {
     width: 100vw;
@@ -305,6 +316,7 @@ footer {
   }
 
   #infoFVR {
+    margin: 0;
     margin-top: 1em;
     text-align: center;
   }
@@ -439,5 +451,76 @@ footer {
 
   footer {
     padding: 1em 0em;
+  }
+}
+
+/* Large Devices (Laptops-Desktop)*/
+@media screen and (max-width: 992px) {
+  nav {
+    padding: 0em 4em;
+  }
+
+  header {
+    padding: 0em 4em;
+    align-items: center;
+  }
+
+  #infoFVR {
+    margin: 0;
+  }
+
+  #skills {
+    padding: 0em 4em;
+  }
+
+  #trabajos {
+    padding: 0em 4em;
+  }
+}
+
+/*Medium devices (Landscapes and tablets)*/
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 0em 2em;
+  }
+
+  header {
+    padding: 0em 2em;
+  }
+
+  #brands {
+    line-height: 4em;
+  }
+
+  #skills {
+    padding: 0em 2em;
+  }
+
+  #trabajos {
+    padding: 0em 2em;
+  }
+}
+
+/* Small devices*/
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 0em 1em;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #actions {
+    flex-direction: column;
+  }
+
+  #btn_secondary {
+    width: 90vw;
+  }
+
+  .infoCard #btn_secondary {
+    width: 82vw;
   }
 }
