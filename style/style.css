@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    text-decoration:none;
+    list-style:none;
+    box-sizing: border-box;
+}
+
+body{
+    height:100%;
+    width:40vw;
+    background: linear-gradient(243.15deg, #000046 0%, #1CB5E0 99.34%);
+    background-repeat: no-repeat;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;  
+    color:white;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:70vw;
+    height:109px;
+    margin: 0px 296px;
+}
+
+header{
+    margin: 0px 296px;
+    margin-top:6em;
+    margin-bottom:12em;
+    display: flex;
+    flex-direction: row;
+    width:70vw;
+}
+
+#infoFVR{
+    margin-top:96px;
+    margin-right:96px;
+}
+
+#infoFVR h1{
+    font-weight: 700;
+    font-size: 64px;
+    color:#CEF6FF;
+    /*margin-bottom:48px;*/
+}
+
+/*
+#portrait{
+    
+    position:absolute;
+    left: 800px;
+    top: 100px;
+    z-index:1;
+    
+}
+*/
+
+#blurTop{
+    position: absolute;
+    left: 800px;
+    top: 200px;
+    z-index:3;
+}
+
+#title{
+    margin-bottom:32px;
+}
+
+#title p{
+    margin-top:24px;
+}
+
+#brands{
+    margin-top:32px;
+    margin-bottom:64px;
+}
+
+.it{
+    margin-left:24px;
+}
+
+#actions{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:32px;
+    
+}
+
+#btn_primary{
+    font-weight: 400;
+    font-size: 16px;
+    width: 308px;
+    height: 64px;
+    background: #FFEB3B;
+    border-radius: 50px;
+    border-style: none;
+    color:#062565;
+}
+
+#btn_primary:hover{
+    background:rgb(255, 217, 0);
+}
+
+#btn_secondary{
+    font-weight: 400;
+    font-size: 16px;
+    
+    width: 308px;
+    height: 64px;
+    background: #062565;
+    border-radius: 50px;
+    border-style: none;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+}
+
+#btn_secondary:hover{
+    background:#02164f;
+}
+
+#icon_download{
+    margin-right:16px;
+}
+
+#btn_link{
+    font-weight: 400;
+    font-size: 16px;
+    background:none;
+    display:flex;
+    align-items:center;
+    color:white;
+    gap:16px;
+}
+
+#btn_link:hover{
+    text-decoration: underline;
+}
+
+.highlights{
+ color: #FFEB3B;
+}
+
+#skills{
+    width:100vw;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom:8em;
+}
+
+#skills h1{
+    font-weight: 700;
+    font-size: 32px;
+    color:#CEF6FF;
+    margin-bottom:0.5em;
+}
+
+#skills p{
+    width:800px;
+}
+
+#designSkills{
+    margin-top:32px;
+    margin-bottom:32px;
+}
+
+#designItems{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+}
+
+#trabajos{
+    margin: 0px 296px;
+    margin-bottom: 96px;
+}
+
+#trabajos h1{
+    font-weight: 700;
+    font-size: 32px;
+    color:#CEF6FF;
+    margin-bottom:0.5em;
+}
+
+#cardsGroup{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap:16px;
+
+}
+
+.card{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px 16px 24px;
+gap: 16px;
+background: rgba(255, 255, 255, 0.1);
+box-shadow: 8px 8px 24px rgba(6, 37, 101, 0.25);
+border-radius: 24px
+}
+
+#card1 h1{
+    font-weight: 700;
+    font-size: 24px;
+    color:white;
+    margin-bottom:0.5em;
+}
+
+#card2{
+    opacity: 0.3;
+}
+
+#card2 h1{
+    font-weight: 700;
+    font-size: 24px;
+    color:white;
+    margin-bottom:0.5em;
+}
+
+#card3{
+    opacity: 0.3;
+}
+
+#card3 h1{
+    font-weight: 700;
+    font-size: 24px;
+    color:white;
+    margin-bottom:0.5em;
+}
+
+footer{
+    width:100vw;
+    text-align:center;
+    padding:16px 0px;
+}
+
+@media screen and (max-width: 1200px) {
+
+        body{
+            width:100vw;
+            margin:0;
+            padding:0;
+        }
+
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width:100vw;
+            height:109px;
+            margin: 0em 0em;
+            background:red;
+        }
+
+        header{
+            margin: 0em;
+            padding: 0em;
+            /*margin-top:2em;*/
+            margin-bottom: 6em;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items:center;
+            width:100vw;
+        }
+
+        .highlights{
+            display:none;
+        }
+
+        #title{
+            display:none;
+        }
+
+        #brands{
+            display:none;
+        }
+
+        #actions{
+            display:none;
+        }
+
+        #infoFVR{
+            margin-top:2em;
+            margin-right:6em;
+            text-align:center;
+        }
+
+        #brands{
+            margin-top:6em;
+            margin-bottom:6em;
+        }
+
+        #actions{
+            justify-content:center;
+        }
+
+        #portrait{
+            display:none;
+            width:200px;
+            height:200px;
+        }
+
+        #blurTop{
+            display:none;
+            /*
+            position: absolute;
+            left: 5em;
+            top: 12em;
+            z-index:3;*/
+        }
+
+        #skills{
+            display:flex;
+            margin: 0em;
+            padding: 0em;
+            width:100vw;
+            
+            flex-direction:column;
+            background:red;
+        }
+        
+        #skills p{
+            
+            width:100%;
+        }
+
+        #imgSkills{
+            display:none;
+        }
+
+        #infoSkills{
+            
+        }
+
+        .skillItem{
+            
+            width:150px;
+        }
+
+        #trabajos{
+            display:none;
+            width:100vw;
+            margin:0em;
+        }
+
+        #cardsGroup{
+            display:flex;
+            flex-direction: column;
+
+        }
+
+        footer{
+            display:none;
+            padding:0px;
+        }
+
+        
+    }
