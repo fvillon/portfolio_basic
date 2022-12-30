@@ -34,6 +34,48 @@ nav {
   padding: 0px 12em;
 }
 
+.menu {
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1.5em;
+}
+
+.menu li {
+  position: relative;
+  /*display: inline-block;*/
+  padding: 0.5em;
+}
+
+.menu li a {
+  color: white;
+  transition: 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #ffeb3b;
+}
+
+.menu li a.active {
+  color: #ffeb3b;
+}
+
+.active::after {
+  /*padding: 0.5em;*/
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #ffeb3b;
+  position: absolute;
+  bottom: -0.5em;
+  left: 0px;
+}
+
+#menu_icon {
+  display: none;
+}
+
 header {
   padding: 0em 12em;
   margin-top: 4em;
@@ -88,10 +130,9 @@ header {
 #brands {
   margin-top: 32px;
   margin-bottom: 6em;
-}
-
-.it {
-  margin-left: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
 }
 
 #actions {
@@ -110,16 +151,19 @@ header {
   border-radius: 50px;
   border-style: none;
   color: #062565;
+  transition: 0.3s ease;
+  width: 16vw;
 }
 
 #btn_primary:hover {
   background: rgb(255, 217, 0);
+  cursor: pointer;
 }
 
 #btn_secondary {
   font-weight: 400;
   font-size: 16px;
-
+  cursor: pointer;
   width: 308px;
   height: 64px;
   background: #062565;
@@ -130,6 +174,7 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition: 0.3s ease;
 }
 
 #btn_secondary:hover {
@@ -166,6 +211,7 @@ header {
   align-items: flex-start;
   margin-bottom: 8em;
   padding-right: 12em;
+  gap: 4em;
 }
 
 #skills h1 {
@@ -230,6 +276,10 @@ header {
   border-radius: 24px;
 }
 
+.card:hover {
+  outline: 1px solid white;
+}
+
 #card1 h1 {
   font-weight: 700;
   font-size: 24px;
@@ -282,6 +332,7 @@ footer {
     height: 109px;
     margin: 0em;
     padding: 0em 6em;
+    transition: 0.2s;
   }
 
   header {
@@ -463,6 +514,47 @@ footer {
   header {
     padding: 0em 4em;
     align-items: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 14%;
+    right: 2%;
+    width: 30vw;
+    height: 26vh;
+    background: #000046;
+    gap: 0.5em;
+    border-radius: 16px;
+    transition: all 0.2s ease;
+  }
+
+  .menu.open {
+    right: 2%;
+  }
+
+  .menu li {
+    width: 100%;
+    padding: 1em;
+  }
+
+  #menu_icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .active::after {
+    /*padding: 0.5em;*/
+    content: "";
+    width: 2px;
+    height: 80%;
+    background: #ffeb3b;
+    position: absolute;
+    justify-content: center;
+    bottom: 6px;
+    left: 0px;
   }
 
   #infoFVR {
