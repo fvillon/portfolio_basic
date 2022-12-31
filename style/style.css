@@ -30,8 +30,25 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  height: 109px;
+  height: 8em;
   padding: 0px 12em;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  transition: 0.4s ease-in-out;
+}
+
+nav.scrolled {
+  background: #0626659f;
+  backdrop-filter: blur(5px);
+  height: 5em;
+}
+
+#actionsNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4em;
 }
 
 .menu {
@@ -39,7 +56,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  gap: 1.5em;
+  gap: 2em;
 }
 
 .menu li {
@@ -74,11 +91,16 @@ nav {
 
 #menu_icon {
   display: none;
+  cursor: pointer;
+}
+
+#menu_icon_c {
+  display: none;
+  cursor: pointer;
 }
 
 header {
-  padding: 0em 12em;
-  margin-top: 4em;
+  padding: 8em 12em;
   margin-bottom: 12em;
   display: flex;
   flex-direction: row;
@@ -335,9 +357,23 @@ footer {
     transition: 0.2s;
   }
 
+  .menu {
+    width: 50vw;
+  }
+
+  #actionsNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+  }
+
+  #btn_primary {
+    width: 20vw;
+  }
+
   header {
-    margin: 0em;
-    padding: 0em 6em;
+    padding: 6em 6em;
     /*margin-top:2em;*/
     margin-bottom: 8em;
     display: flex;
@@ -360,6 +396,7 @@ footer {
 
   #brands {
     /* display:none;*/
+    justify-content: center;
   }
 
   #actions {
@@ -512,7 +549,7 @@ footer {
   }
 
   header {
-    padding: 0em 4em;
+    padding: 6em 4em;
     align-items: center;
   }
 
@@ -521,10 +558,10 @@ footer {
     justify-content: flex-start;
     align-items: center;
     position: absolute;
-    top: 14%;
-    right: 2%;
+    top: 79%;
+    right: -100%;
     width: 30vw;
-    height: 26vh;
+    height: 32vh;
     background: #000046;
     gap: 0.5em;
     border-radius: 16px;
@@ -537,11 +574,16 @@ footer {
 
   .menu li {
     width: 100%;
-    padding: 1em;
+    padding: 1.5em;
   }
 
   #menu_icon {
     display: block;
+    cursor: pointer;
+  }
+
+  #menu_icon_c {
+    display: none;
     cursor: pointer;
   }
 
@@ -555,6 +597,10 @@ footer {
     justify-content: center;
     bottom: 6px;
     left: 0px;
+  }
+
+  #btn_primary {
+    width: 30vw;
   }
 
   #infoFVR {
@@ -576,8 +622,16 @@ footer {
     padding: 0em 2em;
   }
 
+  .menu {
+    width: 40vw;
+  }
+
+  #btn_primary {
+    width: 40vw;
+  }
+
   header {
-    padding: 0em 2em;
+    padding: 6em 2em;
   }
 
   #brands {
@@ -599,6 +653,10 @@ footer {
     padding: 0em 1em;
   }
 
+  #btn_primary {
+    width: 50vw;
+  }
+
   .card {
     flex-direction: column;
     align-items: center;
@@ -614,5 +672,43 @@ footer {
 
   .infoCard #btn_secondary {
     width: 82vw;
+  }
+
+  /* Small devices plus*/
+  @media screen and (min-width: 200px) {
+    nav {
+      padding: 0em 1em;
+    }
+
+    #btn_primary {
+      width: 50vw;
+    }
+
+    header {
+      width: 100vw;
+      padding: 6em 2em;
+    }
+
+    #brands {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #actions {
+      flex-direction: column;
+    }
+
+    #btn_secondary {
+      width: 90vw;
+    }
+
+    .infoCard #btn_secondary {
+      width: 82vw;
+    }
   }
 }

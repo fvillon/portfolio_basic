@@ -1,8 +1,22 @@
-let menu_icon = document.querySelector("#menu_icon");
+let iconMenu = document.getElementById("iconMenu");
 let menu = document.querySelector(".menu");
+let menu_icon = document.querySelector("#menu_icon");
 
 menu_icon.onclick = () => {
-  menu.classList.toogle("open");
+  menu.classList.toggle("open");
+  if (iconMenu.src.match("./assets/icons/List.svg")) {
+    iconMenu.src = "./assets/icons/X.svg";
+  } else {
+    iconMenu.src = "./assets/icons/List.svg";
+  }
 };
 
-alert("Hola mundo");
+document.addEventListener("scroll", () => {
+  let nav = document.querySelector("nav");
+
+  if (window.scrollY > 0) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
+});
