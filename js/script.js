@@ -1,6 +1,8 @@
 let iconMenu = document.getElementById("iconMenu");
 let menu = document.querySelector(".menu");
 let menu_icon = document.querySelector("#menu_icon");
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("nav .menu ul li");
 
 menu_icon.onclick = () => {
   menu.classList.toggle("open");
@@ -20,3 +22,5 @@ document.addEventListener("scroll", () => {
     nav.classList.remove("scrolled");
   }
 });
+
+window.addEventListener("scroll", () => {});
