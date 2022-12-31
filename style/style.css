@@ -526,6 +526,13 @@ footer {
     gap: 2em;
   }
 
+  .card .imgCard {
+    border-radius: 8px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    height: 18em;
+  }
+
   #card1 {
     margin-bottom: 0em;
   }
@@ -711,6 +718,13 @@ footer {
     .card {
       flex-direction: column;
       align-items: center;
+    }
+
+    .card .imgCard {
+      /*aspect-ratio: none;
+      object-fit: cover;
+      background: red;*/
+      width: 100%;
     }
 
     #actions {
