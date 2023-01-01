@@ -701,18 +701,46 @@ footer {
       padding: 0em 1em;
     }
 
+    .menu {
+      height: 36vh;
+    }
+
+    .active::after {
+      /*padding: 0.5em;*/
+      content: "";
+      width: 2px;
+      height: 40%;
+      background: #ffeb3b;
+      position: absolute;
+      justify-content: center;
+      bottom: 20px;
+      left: 0px;
+    }
+
     #btn_primary {
       width: 50vw;
     }
 
     #header {
       width: 100vw;
-      padding: 6em 2em;
+      padding: 6em 1em;
     }
 
     #brands {
       flex-wrap: wrap;
       justify-content: center;
+    }
+
+    #skills {
+      padding: 6em 1em;
+    }
+
+    #designItems {
+      flex-wrap: wrap;
+    }
+
+    #trabajos {
+      padding: 6em 1em;
     }
 
     .card {
