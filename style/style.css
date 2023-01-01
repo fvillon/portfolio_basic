@@ -282,6 +282,7 @@ nav.scrolled {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  height: 150px;
 }
 #designItems div:hover h3,
 #devItems div:hover h3 {
@@ -689,6 +690,34 @@ footer {
     padding: 4em 2em;
   }
 
+  #infoSkills {
+    gap: 2em;
+  }
+
+  #designSkills {
+    margin-bottom: 16em;
+  }
+
+  #skills h3 {
+    width: 120px;
+    height: 40px;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #06266500;
+    color: white;
+    padding: 0.5em;
+    opacity: 1;
+    transform: translate(0px, -16px);
+    transition: 0.4s ease;
+  }
+
+  #designItems div:hover h3,
+  #devItems div:hover h3 {
+    opacity: 1;
+    transform: translate(0px, -16px);
+  }
+
   #trabajos {
     padding: 4em 2em;
   }
@@ -759,6 +788,7 @@ footer {
 
     #skills {
       padding: 6em 1em;
+      margin-bottom: 8em;
     }
 
     #designItems,
@@ -767,7 +797,7 @@ footer {
     }
 
     #trabajos {
-      padding: 6em 1em;
+      padding: 8em 1em;
     }
 
     .card {
