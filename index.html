@@ -17,7 +17,7 @@
           <li><a class="skills" href="#skills">Habilidades</a></li>
           <li><a class="trabajos" href="#trabajos">Trabajos</a></li>
         </ul>
-        <button id="btn_primary">Contáctame vía email</button>
+        <button id="btn_primary" onclick="window.location.href='mailto:fvillonr@gmail.com'">Contáctame vía email</button>
         <div id="menu_icon">
           <img id="iconMenu" src="./assets/icons/List.svg" alt="" />
         </div>
@@ -41,15 +41,18 @@
           <img class="it" src="assets/images/brands/Netlife.svg" alt="" />
         </div>
         <div id="actions">
-          <button id="btn_secondary">
-            <img
-              id="icon_download"
-              src="assets/icons/DownloadSimple.svg"
-              alt=""
-            />
-            Descargar mi hoja de vida
-          </button>
-          <button id="btn_link">
+          <a href="./files/CV Formato_2022_FVR_SP_dev.pdf" download="FernandoVillonCV" target="_blank">
+            <button id="btn_secondary">
+              <img
+                id="icon_download"
+                src="assets/icons/DownloadSimple.svg"
+                alt=""
+              />
+              Descargar mi hoja de vida
+            </button>
+          </a>
+          
+          <button id="btn_link" onclick="window.open('http://www.linkedin.com/in/fvillonr/')">
             o visitame en Linkedin
             <img
               id="icon_download"
@@ -153,11 +156,9 @@
       <h1 class="title">Trabajos</h1>
       <div id="cardsGroup">
         <div class="card" id="card1">
-          <img
-            class="imgCard"
-            src="assets/images/displayCards/displayClaro.png"
-            alt=""
-          />
+          <div id="imgCard1">
+
+          </div>
           <div class="infoCard">
             <h1 class="subtitle">Portabilidad Digital</h1>
             <div class="toolCards">
@@ -179,11 +180,9 @@
           </div>
         </div>
         <div class="card" id="card2">
-          <img
-            class="imgCard"
-            src="assets/images/displayCards/displayNetlifeApp.png"
-            alt=""
-          />
+          <div id="imgCard2">
+
+          </div>
           <div class="infoCard">
             <h1 class="subtitle">Netlife Access</h1>
             <div class="toolCards">
@@ -200,11 +199,9 @@
           </div>
         </div>
         <div class="card" id="card3">
-          <img
-            class="imgCard"
-            src="assets/images/displayCards/displayCrecosMarketPlace.png"
-            alt=""
-          />
+          <div id="imgCard3">
+
+          </div>
           <div class="infoCard">
             <h1 class="subtitle">Crecos Marketplace</h1>
             <div class="toolCards">

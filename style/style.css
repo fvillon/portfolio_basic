@@ -35,7 +35,7 @@ nav {
   align-items: center;
   width: 100vw;
   height: 8em;
-  padding: 0px 12em;
+  padding: 0px 16em;
   position: fixed;
   top: 0;
   z-index: 99;
@@ -104,11 +104,12 @@ nav.scrolled {
 }
 
 #header {
-  padding: 8em 12em;
+  padding: 10em 16em;
 
   display: flex;
   flex-direction: row;
   width: 100vw;
+  gap:8em;
 }
 
 #infoFVR {
@@ -139,6 +140,7 @@ nav.scrolled {
 */
 
 #blurTop {
+  display:none;
   position: absolute;
   left: 44em;
   top: 20em;
@@ -190,7 +192,24 @@ nav.scrolled {
   font-weight: 400;
   font-size: 16px;
   cursor: pointer;
-  width: 308px;
+  width: 100%;
+  height: 64px;
+  background: #062565;
+  border-radius: 50px;
+  border-style: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+#actions a {
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
   height: 64px;
   background: #062565;
   border-radius: 50px;
@@ -214,11 +233,14 @@ nav.scrolled {
 #btn_link {
   font-weight: 400;
   font-size: 16px;
-  background: none;
+  background:none;
   display: flex;
   align-items: center;
   color: white;
   gap: 16px;
+  width:100%;
+  cursor:pointer;
+  position:relative;
 }
 
 #btn_link:hover {
@@ -237,7 +259,7 @@ nav.scrolled {
   align-items: flex-start;
   /*margin-bottom: 8em;
   padding-right: 12em;*/
-  padding: 8em 4em;
+  padding: 8em 12em;
   gap: 4em;
 }
 
@@ -295,7 +317,7 @@ nav.scrolled {
 }
 
 .skillItem {
-  width: 10vw;
+  width: 8vw;
 }
 
 #trabajos {
@@ -326,15 +348,56 @@ nav.scrolled {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px 16px 24px;
+  flex: 1 1 0;
+  padding: 2em 2em;
   gap: 2em;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 8px 8px 24px rgba(6, 37, 101, 0.25);
   border-radius: 24px;
+  width:100%;
 }
 
 .card:hover {
   outline: 1px solid white;
+}
+
+.imgCard{
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit: cover;
+    border-radius:16px;
+    background-color:linear-gradient(#7ed56f, #28b485);
+
+}
+
+#imgCard1{
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit: cover;
+  border-radius:16px;
+  background-image: url(../assets/images/displayCards/displayClaro.svg);
+  background-size:cover;
+  background-position:top;
+}
+
+#imgCard2{
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit: cover;
+  border-radius:16px;
+  background-image: url(../assets/images/displayCards/displayNetlifeApp.svg);
+  background-size:cover;
+  background-position:top;
+}
+
+#imgCard3{
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit: cover;
+  border-radius:16px;
+  background-image: url(../assets/images/displayCards/displayCrecosMarketPlace.svg);
+  background-size:cover;
+  background-position:top;
 }
 
 .infoCard {
@@ -413,6 +476,17 @@ footer {
     width: 20vw;
   }
 
+  #btn_link{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    border:1px solid white;
+    /*background:rgba(255, 255, 255, 0.049);*/
+    padding:1em;
+    border-radius:32px;
+    width:100%;
+  }
+
   #header {
     padding: 6em 6em;
     /*margin-top:2em;*/
@@ -420,7 +494,7 @@ footer {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-
+    gap:1em;
     width: 100vw;
   }
 
@@ -550,6 +624,7 @@ footer {
 
   .card {
     flex-direction: row;
+    padding:1em;
     gap: 2em;
   }
 
@@ -559,6 +634,22 @@ footer {
     object-fit: cover;
     height: 18em;
   }
+
+  #imgCard1{
+    width:40%;
+    aspect-ratio:1/1;
+  }
+
+  #imgCard2{
+    width:52%;
+    aspect-ratio:1/1;
+  }
+
+  #imgCard3{
+    width:44%;
+    aspect-ratio:1/1;
+  }
+
 
   #card1 {
     margin-bottom: 0em;
@@ -778,7 +869,8 @@ footer {
 
     #header {
       width: 100vw;
-      padding: 6em 1em;
+      padding: 6em 1em 2em 1em;
+      gap:1em;
     }
 
     #brands {
@@ -787,7 +879,7 @@ footer {
     }
 
     #skills {
-      padding: 6em 1em;
+      padding: 2em 1em 8em 1em;
       margin-bottom: 8em;
     }
 
@@ -803,6 +895,7 @@ footer {
     .card {
       flex-direction: column;
       align-items: center;
+      padding:2em;
     }
 
     .card .imgCard {
@@ -812,16 +905,28 @@ footer {
       width: 100%;
     }
 
+    #imgCard1, #imgCard2, #imgCard3{
+      aspect-ratio:16/9;
+      width:100%;
+    }
+
     #actions {
       flex-direction: column;
     }
 
     #btn_secondary {
-      width: 90vw;
+      width: 100%;
     }
 
     .infoCard #btn_secondary {
       width: 82vw;
+    }
+
+    #btn_link{
+      display:flex;
+      flex-direction:row;
+      justify-content:center;
+      width:100%;
     }
   }
 }
