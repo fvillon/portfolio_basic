@@ -361,3 +361,33 @@ footer {
   text-align: center;
   padding: 16px 0px;
 }
+
+@media screen and (max-width: 1200px) {
+  #header {
+    padding: 8em 6em 10em 6em;
+  }
+
+  main {
+  }
+
+  #infoFVR {
+    gap: 1em;
+  }
+
+  #displayIMG {
+    width: 40vw;
+    height: 40vh;
+  }
+
+  #selectPlan {
+    padding: 0em 6em;
+  }
+
+  #planDetail {
+    padding: 0em 6em;
+  }
+
+  #success {
+    padding: 0em 6em;
+  }
+}
