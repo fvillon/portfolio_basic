@@ -109,7 +109,14 @@ nav.scrolled {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  gap:8em;
+  gap: 8em;
+
+  background: linear-gradient(
+    179.75deg,
+    #01074c 8.3%,
+    #01074c 60.87%,
+    rgba(1, 7, 76, 0) 99.76%
+  );
 }
 
 #infoFVR {
@@ -119,9 +126,9 @@ nav.scrolled {
 
 #infoFVR h1 {
   font-weight: 700;
-  font-size: 64px;
+  font-size: 32px;
   color: #cef6ff;
-  line-height: 77px;
+  line-height: 32px;
   /*margin-bottom:48px;*/
 }
 
@@ -140,7 +147,7 @@ nav.scrolled {
 */
 
 #blurTop {
-  display:none;
+  display: none;
   position: absolute;
   left: 44em;
   top: 20em;
@@ -148,11 +155,59 @@ nav.scrolled {
 }
 
 #title {
+  text-align: left;
+  display: flex;
+  align-items: flex-end;
   margin-bottom: 32px;
+  gap: 1em;
 }
 
 #title p {
   margin-top: 0.5em;
+}
+
+#infoFVR .dynamic-txts {
+  font-family: "Inter", sans-serif;
+  color: #ffeb3b;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 62px;
+  height: 54px;
+  overflow: hidden;
+}
+
+#infoFVR .dynamic-txts li {
+  top: 0;
+  color: #ffeb3b;
+  position: relative;
+  animation: slide 12s steps(3) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -200px;
+  }
+}
+
+#infoFVR .dynamic-txts li::after {
+  content: "";
+  background: #01074c;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid #ffeb3b;
+  animation: typing 4s steps(6) infinite;
+}
+
+@keyframes typing {
+  52%,
+  86% {
+    left: calc(100%);
+  }
+  100% {
+    left: 0;
+  }
 }
 
 #brands {
@@ -233,14 +288,14 @@ nav.scrolled {
 #btn_link {
   font-weight: 400;
   font-size: 16px;
-  background:none;
+  background: none;
   display: flex;
   align-items: center;
   color: white;
   gap: 16px;
-  width:100%;
-  cursor:pointer;
-  position:relative;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
 }
 
 #btn_link:hover {
@@ -354,50 +409,49 @@ nav.scrolled {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 8px 8px 24px rgba(6, 37, 101, 0.25);
   border-radius: 24px;
-  width:100%;
+  width: 100%;
 }
 
 .card:hover {
   outline: 1px solid white;
 }
 
-.imgCard{
-    width:100%;
-    aspect-ratio:16/9;
-    object-fit: cover;
-    border-radius:16px;
-    background-color:linear-gradient(#7ed56f, #28b485);
-
+.imgCard {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 16px;
+  background-color: linear-gradient(#7ed56f, #28b485);
 }
 
-#imgCard1{
-  width:100%;
-  aspect-ratio:16/9;
+#imgCard1 {
+  width: 100%;
+  aspect-ratio: 16/9;
   object-fit: cover;
-  border-radius:16px;
+  border-radius: 16px;
   background-image: url(../assets/images/displayCards/displayClaro.svg);
-  background-size:cover;
-  background-position:top;
+  background-size: cover;
+  background-position: top;
 }
 
-#imgCard2{
-  width:100%;
-  aspect-ratio:16/9;
+#imgCard2 {
+  width: 100%;
+  aspect-ratio: 16/9;
   object-fit: cover;
-  border-radius:16px;
+  border-radius: 16px;
   background-image: url(../assets/images/displayCards/displayNetlifeApp.svg);
-  background-size:cover;
-  background-position:top;
+  background-size: cover;
+  background-position: top;
 }
 
-#imgCard3{
-  width:100%;
-  aspect-ratio:16/9;
+#imgCard3 {
+  width: 100%;
+  aspect-ratio: 16/9;
   object-fit: cover;
-  border-radius:16px;
+  border-radius: 16px;
   background-image: url(../assets/images/displayCards/displayCrecosMarketPlace.svg);
-  background-size:cover;
-  background-position:top;
+  background-size: cover;
+  background-position: top;
 }
 
 .infoCard {
@@ -476,15 +530,15 @@ footer {
     width: 20vw;
   }
 
-  #btn_link{
-    display:flex;
+  #btn_link {
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    border:1px solid white;
+    border: 1px solid white;
     /*background:rgba(255, 255, 255, 0.049);*/
-    padding:1em;
-    border-radius:32px;
-    width:100%;
+    padding: 1em;
+    border-radius: 32px;
+    width: 100%;
   }
 
   #header {
@@ -494,7 +548,7 @@ footer {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    gap:1em;
+    gap: 1em;
     width: 100vw;
   }
 
@@ -507,6 +561,8 @@ footer {
 
   #title {
     /*display:none;*/
+    justify-content: center;
+    align-items: flex-end;
   }
 
   #brands {
@@ -624,7 +680,7 @@ footer {
 
   .card {
     flex-direction: row;
-    padding:1em;
+    padding: 1em;
     gap: 2em;
   }
 
@@ -635,21 +691,20 @@ footer {
     height: 18em;
   }
 
-  #imgCard1{
-    width:40%;
-    aspect-ratio:1/1;
+  #imgCard1 {
+    width: 40%;
+    aspect-ratio: 1/1;
   }
 
-  #imgCard2{
-    width:52%;
-    aspect-ratio:1/1;
+  #imgCard2 {
+    width: 52%;
+    aspect-ratio: 1/1;
   }
 
-  #imgCard3{
-    width:44%;
-    aspect-ratio:1/1;
+  #imgCard3 {
+    width: 44%;
+    aspect-ratio: 1/1;
   }
-
 
   #card1 {
     margin-bottom: 0em;
@@ -870,7 +925,7 @@ footer {
     #header {
       width: 100vw;
       padding: 6em 1em 2em 1em;
-      gap:1em;
+      gap: 1em;
     }
 
     #brands {
@@ -895,7 +950,7 @@ footer {
     .card {
       flex-direction: column;
       align-items: center;
-      padding:2em;
+      padding: 2em;
     }
 
     .card .imgCard {
@@ -905,9 +960,11 @@ footer {
       width: 100%;
     }
 
-    #imgCard1, #imgCard2, #imgCard3{
-      aspect-ratio:16/9;
-      width:100%;
+    #imgCard1,
+    #imgCard2,
+    #imgCard3 {
+      aspect-ratio: 16/9;
+      width: 100%;
     }
 
     #actions {
@@ -922,11 +979,11 @@ footer {
       width: 82vw;
     }
 
-    #btn_link{
-      display:flex;
-      flex-direction:row;
-      justify-content:center;
-      width:100%;
+    #btn_link {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
     }
   }
 }

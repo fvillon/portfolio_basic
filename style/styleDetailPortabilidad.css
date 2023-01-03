@@ -199,6 +199,8 @@ main {
   align-items: center;
   color: white;
   gap: 16px;
+  padding: 1em;
+  cursor: pointer;
 }
 
 #btn_link:hover {
@@ -262,7 +264,6 @@ main {
   background: #ffeb3b;
 }
 
-
 #planDetail {
   width: 100vw;
   display: flex;
@@ -298,7 +299,6 @@ main {
   flex-direction: row;
   gap: 2em;
 }
-
 
 #success {
   width: 100vw;
@@ -353,8 +353,7 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-
-  nav{
+  nav {
     padding: 0em 6em;
   }
 
@@ -372,13 +371,13 @@ footer {
 
   #displayIMG {
     width: 40vw;
-    height:36vh;
+    height: 36vh;
   }
 
   #selectPlan {
-    width:100vw;
+    width: 100vw;
     padding: 0em 6em;
-    gap:1em;
+    gap: 1em;
   }
 
   .stepLine {
@@ -387,22 +386,22 @@ footer {
     height: 1000px;
     background: #ffeb3b;
   }
-  
+
   #img1 {
     width: 78vw;
   }
 
   #planDetail {
     padding: 0em 6em;
-    gap:1em;
+    gap: 1em;
   }
 
   #planDetail .infoStep {
     width: 100%;
   }
 
-  .contStep2{
-    flex-direction:column;
+  .contStep2 {
+    flex-direction: column;
   }
 
   #planDetail .stepLine {
@@ -414,7 +413,7 @@ footer {
 
   #success {
     padding: 0em 6em;
-    gap:1em;
+    gap: 1em;
   }
 
   #img3 {
@@ -422,9 +421,8 @@ footer {
   }
 }
 
-@media screen and (max-width: 992px){
-
-  nav{
+@media screen and (max-width: 992px) {
+  nav {
     padding: 0em 4em;
   }
 
@@ -432,17 +430,20 @@ footer {
     width: 24vw;
   }
 
-  #header{
-    padding:8em 4em 12em 4em;
+  #header {
+    padding: 8em 4em 12em 4em;
   }
 
   main {
-    flex-direction:column-reverse;
-    align-items:center;
-    gap:2em;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2em;
   }
 
-  #selectPlan, #planDetail, #success, #prototype{
+  #selectPlan,
+  #planDetail,
+  #success,
+  #prototype {
     padding: 0em 4em;
   }
 
@@ -460,13 +461,12 @@ footer {
     background: #ffeb3b;
   }
 
-  #prototype{
-    padding:6em 4em;
+  #prototype {
+    padding: 6em 4em;
   }
 }
 
-@media screen and (max-width: 768px){
-
+@media screen and (max-width: 768px) {
   #infoFVR h1 {
     font-weight: 700;
     font-size: 56px;
@@ -479,13 +479,13 @@ footer {
     width: 24vw;
   }
 
-  #header{
-    padding:8em 4em;
+  #header {
+    padding: 8em 4em;
   }
 
   #displayIMG {
     width: 50vw;
-    height:38vh;
+    height: 38vh;
   }
 
   #img1 {
@@ -514,30 +514,29 @@ footer {
     background: #ffeb3b;
   }
 
-  #prototype{
-    padding:8em 4em;
+  #prototype {
+    padding: 8em 4em;
   }
 
-  #prototype #actions{
-    flex-direction:column;
+  #prototype #actions {
+    flex-direction: column;
   }
 }
 
 /* Small devices*/
-@media screen and (max-width: 600px){
-
-  nav{
-    padding:0em 2em;
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 0em 2em;
   }
 
-  #header{
-    width:100vw;
-    padding:6em 2em 4em 2em;
+  #header {
+    width: 100vw;
+    padding: 6em 2em 4em 2em;
   }
 
   #displayIMG {
     width: 50vw;
-    height:24vh;
+    height: 24vh;
   }
 
   #btn_primary {
@@ -545,8 +544,8 @@ footer {
   }
 }
 
-  /* Small devices plus*/
-  /*@media screen and (min-width: 200px){
+/* Small devices plus*/
+/*@media screen and (min-width: 200px){
 
     #header{
       padding: 8em 2em 8em 2em;
