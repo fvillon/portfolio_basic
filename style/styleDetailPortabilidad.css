@@ -531,17 +531,43 @@ footer {
 
   #header {
     width: 100vw;
-    padding: 6em 2em 4em 2em;
+    padding: 6em 4em 4em 4em;
   }
-
+  
+  #infoFVR h1 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #cef6ff;
+    line-height: 56px;
+    /*margin-bottom:48px;*/
+  }
   #displayIMG {
     width: 50vw;
     height: 24vh;
   }
 
   #btn_primary {
-    width: 40vw;
+    width: 50vw;
   }
+
+  #selectPlan, #planDetail, #success{
+    padding: 0em 1em;
+  }
+
+  .stepLine {
+    display: block;
+    width: 1px;
+    height: 480px;
+    background: #ffeb3b;
+  }
+
+  #planDetail .stepLine {
+    display: block;
+    width: 1px;
+    height: 500px;
+    background: #ffeb3b;
+  }
+  
 }
 
 /* Small devices plus*/

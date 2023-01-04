@@ -108,19 +108,16 @@ nav.scrolled {
 
   display: flex;
   flex-direction: row;
+
   width: 100vw;
   gap: 8em;
 
-  background: linear-gradient(
-    179.75deg,
-    #01074c 8.3%,
-    #01074c 60.87%,
-    rgba(1, 7, 76, 0) 99.76%
-  );
+  background: linear-gradient(179.44deg, #01074C 47.67%, rgba(1, 7, 76, 0) 92.67%);
 }
 
 #infoFVR {
   margin-top: 96px;
+width:50vw;
   /*margin-right: 96px;*/
 }
 
@@ -135,23 +132,46 @@ nav.scrolled {
 #infoFVR p {
   margin-top: 2em;
 }
-/*
+
+
 #portrait{
-    
-    position:absolute;
-    left: 800px;
+  width:250px;
+  height:228px;
+  /*
+  border-image: linear-gradient(164.14deg, rgba(14, 93, 149, 0) 26.73%, #BAEEFF 111.18%);
+    filter: drop-shadow(0px 4px 56px rgba(0, 0, 0, 0.25));
+    border-width: 56px;
+    border-style: solid;
+    border: 4px solid transparent;*/
+padding: 40px;
+box-sizing: content-box;
+  background-image:url(../assets/images/primerPlanoBIG.webp);
+    /*position:absolute;*/
+  background-size: cover;
+  background-position: top;
+  border-radius:50%;
+  
+   /* left: 800px;
     top: 100px;
-    z-index:1;
+    z-index:1;*/
     
 }
-*/
+
+#portraitIMG{
+
+  position:relative;
+  width:420px;
+  height:420px;
+  filter: drop-shadow(0px 4px 56px rgba(0, 0, 0, 0.25));
+}
 
 #blurTop {
+
   display: none;
   position: absolute;
-  left: 44em;
-  top: 20em;
-  z-index: 3;
+  left: 54em;
+  top: 10em;
+
 }
 
 #title {
@@ -429,7 +449,7 @@ nav.scrolled {
   aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: 16px;
-  background-image: url(../assets/images/displayCards/displayClaro.svg);
+  background-image: url(../assets/images/displayCards/displayClaro.jpg);
   background-size: cover;
   background-position: top;
 }
@@ -439,7 +459,7 @@ nav.scrolled {
   aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: 16px;
-  background-image: url(../assets/images/displayCards/displayNetlifeApp.svg);
+  background-image: url(../assets/images/displayCards/displayNetlifeApp.jpg);
   background-size: cover;
   background-position: top;
 }
@@ -449,7 +469,7 @@ nav.scrolled {
   aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: 16px;
-  background-image: url(../assets/images/displayCards/displayCrecosMarketPlace.svg);
+  background-image: url(../assets/images/displayCards/displayCrecosMarketPlace.jpg);
   background-size: cover;
   background-position: top;
 }
@@ -550,6 +570,12 @@ footer {
     align-items: center;
     gap: 1em;
     width: 100vw;
+    background: linear-gradient(
+    179.75deg,
+    #01074c 8.3%,
+    #01074c 60.87%,
+    rgba(1, 7, 76, 0) 99.76%
+  );
   }
 
   #infoFVR h1 {
@@ -578,6 +604,7 @@ footer {
     margin: 0;
     margin-top: 1em;
     text-align: center;
+
   }
 
   #brands {
@@ -594,6 +621,7 @@ footer {
     padding: 0;
     width: 200px;
     height: 200px;
+
   }
 
   #blurTop {
@@ -747,6 +775,11 @@ footer {
     align-items: center;
   }
 
+  #header #title{
+    flex-direction:column;
+    align-items:center;
+  }
+
   .menu {
     flex-direction: column;
     justify-content: flex-start;
@@ -799,7 +832,10 @@ footer {
 
   #infoFVR {
     margin: 0;
+    width:100%;
   }
+
+
 
   #skills {
     padding: 4em 4em;
@@ -877,6 +913,16 @@ footer {
 
   #btn_primary {
     width: 50vw;
+  }
+
+  #infoFVR .dynamic-txts {
+    font-family: "Inter", sans-serif;
+    color: #ffeb3b;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 60px;
+    height: 48px;
+    overflow: hidden;
   }
 
   .card {
