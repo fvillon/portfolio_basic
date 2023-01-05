@@ -110,7 +110,7 @@ nav.scrolled {
   flex-direction: row;
 
   width: 100vw;
-  gap: 8em;
+  gap: 6em;
 
   background: linear-gradient(179.44deg, #01074C 47.67%, rgba(1, 7, 76, 0) 92.67%);
 }
@@ -177,7 +177,8 @@ box-sizing: content-box;
 #title {
   text-align: left;
   display: flex;
-  align-items: flex-end;
+  flex-direction:column;
+  align-items: flex-start;
   margin-bottom: 32px;
   gap: 1em;
 }
@@ -269,7 +270,7 @@ box-sizing: content-box;
   cursor: pointer;
   width: 100%;
   height: 64px;
-  background: #062565;
+  background:#062565;
   border-radius: 50px;
   border-style: none;
   color: white;
@@ -284,7 +285,7 @@ box-sizing: content-box;
   font-weight: 400;
   font-size: 16px;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
   height: 64px;
   background: #062565;
   border-radius: 50px;
@@ -306,20 +307,28 @@ box-sizing: content-box;
 }
 
 #btn_link {
-  font-weight: 400;
-  font-size: 16px;
-  background: none;
-  display: flex;
-  align-items: center;
+  background:none;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
   color: white;
-  gap: 16px;
-  width: 100%;
+  width: 56px;
+  height:56px;
+  border:1px solid white;
+  border-radius:50%;
   cursor: pointer;
-  position: relative;
+  text-align:center;
+  padding-left:1em;
 }
 
 #btn_link:hover {
   text-decoration: underline;
+  background:#1cb5e02c;
+}
+
+.nameRRSS{
+  display:none;
 }
 
 .highlights {
@@ -551,14 +560,14 @@ footer {
   }
 
   #btn_link {
+    width:56px;
+    height:56px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     border: 1px solid white;
-    /*background:rgba(255, 255, 255, 0.049);*/
-    padding: 1em;
+    background:rgba(255, 255, 255, 0.049);
     border-radius: 32px;
-    width: 100%;
   }
 
   #header {
@@ -588,7 +597,7 @@ footer {
   #title {
     /*display:none;*/
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
   }
 
   #brands {
@@ -596,15 +605,19 @@ footer {
     justify-content: center;
   }
 
-  #actions {
-    /* display:none;*/
+  #actions a{
+    width:40%;
+  }
+
+  #btn_secondary{
+    width:100%;
   }
 
   #infoFVR {
     margin: 0;
     margin-top: 1em;
     text-align: center;
-
+    width:100%
   }
 
   #brands {
@@ -835,7 +848,27 @@ footer {
     width:100%;
   }
 
+  #actions {
+    flex-direction: column;
+    width:100%;
+  }
 
+  #actions a{
+    width:80%;
+  }
+  
+  #btn_link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .nameRRSS{
+    display:flex;
+    flex-direction:row;
+    font-size:16px;
+  }
 
   #skills {
     padding: 4em 4em;
@@ -859,7 +892,10 @@ footer {
   #btn_primary {
     width: 40vw;
   }
-
+  
+  #btn_link {
+    width: 80%;
+  }
   #header {
     padding: 6em 2em;
   }
@@ -877,7 +913,7 @@ footer {
   }
 
   #designSkills {
-    margin-bottom: 16em;
+    margin-bottom: 4em;
   }
 
   #skills h3 {
@@ -924,6 +960,19 @@ footer {
     height: 48px;
     overflow: hidden;
   }
+
+  #item{
+    gap:0.5em;
+  }
+
+  #designSkills {
+    margin-bottom: 4em;
+  }
+
+  .skillItem{
+    width:24vw;
+  }
+
 
   .card {
     flex-direction: column;
@@ -1013,23 +1062,14 @@ footer {
       width: 100%;
     }
 
-    #actions {
-      flex-direction: column;
-    }
-
-    #btn_secondary {
-      width: 100%;
-    }
 
     .infoCard #btn_secondary {
-      width: 82vw;
-    }
-
-    #btn_link {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
       width: 100%;
     }
+
+    #actions a{
+      width:80%
+    };
+
   }
 }
